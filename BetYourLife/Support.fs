@@ -59,6 +59,7 @@ let betting chip=
 
 //Print the final score when the entire game ends
 let over chip debt =
+    stopper ()
     let chipl, debtl, scorel = string chip, string debt, string (chip - debt)
     let l = List.max [chipl.Length; debtl.Length; scorel.Length]
     printf "\n%s\n" (String.replicate (l + 19) "=")
